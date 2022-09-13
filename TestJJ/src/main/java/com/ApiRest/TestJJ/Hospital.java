@@ -6,6 +6,7 @@ public class Hospital {
 	private int x;
 	private int y;
 
+	//Constructores
 	public Hospital() {}
 
 	public Hospital(String name, int x, int y) {
@@ -15,6 +16,7 @@ public class Hospital {
 		this.y = y;
 	}
 
+	//Getters & Setters
 	public String getName() {
 		return name;
 	}
@@ -38,5 +40,4 @@ public class Hospital {
 	public void setY(int y) {
 		this.y = y;
 	}
-
 }

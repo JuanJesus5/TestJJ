@@ -31,11 +31,12 @@ public class AppController {
 	}
 	
 	@GetMapping("/ambulance")
-	public Hospital getClosestHospital(@RequestParam int xPosition, @RequestParam int yPosition) throws Exception {
+	public Object[] getClosestHospital(@RequestParam int xPosition, @RequestParam int yPosition) throws Exception {
 
 		ArrayList<Hospital> aux = hospitals;
 		Hospital closestHospital = null;
 
+		//Check the given parameters and throws an Exception in case the parameters are out of range.
 		if (xPosition <= -100 || xPosition >= 100) {
 			throw new Exception("The ambulance is out of range in X Position ");
 		}
@@ -59,7 +60,7 @@ public class AppController {
 			}
 		}
 
-		return closestHospital;
+		return new Object[] {closestHospital,"distance: "+ distance};
 	}
 
 }
