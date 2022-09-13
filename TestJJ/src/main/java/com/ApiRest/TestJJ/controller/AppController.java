@@ -50,7 +50,7 @@ public class AppController {
 		return new ResponseEntity<>("The parameters are OK", HttpStatus.OK);
 	}
 
-	@GetMapping("/parameters/ambulance")
+	@GetMapping("/ambulance")
 	public Object[] getClosestHospital(@RequestParam int xPosition, @RequestParam int yPosition)  throws Exception{
 
 		ArrayList<Hospital> aux = hospitals;
