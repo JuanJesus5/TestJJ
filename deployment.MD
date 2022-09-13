@@ -2,7 +2,7 @@
 
 1.-Open Docker.
 
-2.-Open "TestJJ" (This is the folder that cotains my test).
+2.-Open "TestJJ" (This is the folder that contains my test).
 
 3.-Open a terminal and find the folder mentioned in step 2. 
 	Command: cd Path
